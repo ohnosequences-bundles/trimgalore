@@ -6,7 +6,7 @@ import ohnosequences.statika._, bundles._, instructions._
 import java.io.File
 
 
-abstract class Trimgalore (val version: String, val cutadapt: Cutadapt) extends Bundle(cutadapt) { trimgalore =>
+abstract class Trimgalore (val version: String, val cutadapt: Cutadapt, val fastqc: FastQC) extends Bundle(cutadapt, fastqc) { trimgalore =>
 
   lazy val zip = s"trim_galore_v${version}.zip"
   lazy val folder = "trim_galore_zip"
