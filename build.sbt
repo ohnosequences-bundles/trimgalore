@@ -13,7 +13,7 @@ resolvers ++= Seq(
 
 libraryDependencies ++= Seq(
   "ohnosequences"           %% "statika"    % "2.0.0-M4",
-  "ohnosequences-bundles"   %% "cutadapt"   % "0.1.0",
+  "ohnosequences-bundles"   %% "cutadapt"   % "0.2.0-SNAPSHOT",
   "ohnosequences-bundles"   %% "fastqc"   % "0.1.0"
 
 )
