@@ -1,3 +1,5 @@
+
+```scala
 package ohnosequencesBundles.statika
 
 import ohnosequences.statika._, bundles._, instructions._
@@ -26,3 +28,10 @@ abstract class Trimgalore (val version: String, val cutadapt: Cutadapt, val fast
   def runTrimGalore(args: String*): CmdInstructions = cmd("trim_galore")(args: _*)
 
 }
+
+```
+
+
+
+
+[main/scala/trimgalore.scala]: trimgalore.scala.md
