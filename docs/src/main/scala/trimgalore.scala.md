@@ -2,7 +2,7 @@
 ```scala
 package ohnosequencesBundles.statika
 
-import ohnosequences.statika._, bundles._, instructions._
+import ohnosequences.statika._
 import java.io.File
 
 
@@ -26,7 +26,6 @@ abstract class Trimgalore (val version: String, val cutadapt: Cutadapt, val fast
   def instructions: AnyInstructions = downloadZip -&- unzip -&- makeExecutable -&- linkBinary
 
   def runTrimGalore(args: String*): CmdInstructions = cmd("trim_galore")(args: _*)
-
 }
 
 ```
