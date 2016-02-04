@@ -1,0 +1,4 @@
+Maintenance release:
+
+- update build plugin to stable version
+- update deps to statika 2.0.0-M5
